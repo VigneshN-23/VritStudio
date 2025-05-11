@@ -74,14 +74,14 @@ export function ProjectsCarousel({ projects }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-display font-semibold mb-4 md:mb-0">
+          <h2 className="text-3xl font-display font-semibold mb-4 md:mb-0 text-dark-text">
             Featured Projects
           </h2>
           <motion.div
             whileHover={{ x: 5 }}
             transition={{ duration: 0.3 }}
           >
-            <Link to="/projects" className="text-gray-900 hover:text-gray-700 font-medium flex items-center">
+            <Link to="/projects" className="text-dark-text hover:text-gray-300 font-medium flex items-center">
               View all projects
               <motion.svg 
                 xmlns="http://www.w3.org/2000/svg" 
