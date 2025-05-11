@@ -26,7 +26,7 @@ export function AboutSection({ isHomepage = false }) {
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl font-display font-semibold mb-12 animate-fade-in">About</h1>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div className="md:col-span-2 animate-fade-in">
             <h2 className="text-2xl font-display font-medium mb-6">{about.heading}</h2>
@@ -34,19 +34,19 @@ export function AboutSection({ isHomepage = false }) {
               <p key={index} className="text-gray-600 mb-4">{paragraph}</p>
             ))}
           </div>
-          
+
           <div className="animate-fade-in">
             <h3 className="text-xl font-display font-medium mb-4">Skills</h3>
             <div className="flex flex-wrap gap-2 mb-8">
               {about.skills.map((skill, index) => (
-                <span key={index} className="px-3 py-1 bg-gray-100 rounded-full text-sm">
+                <span key={index} className="px-3 py-1 bg-gray-100 rounded-full text-sm text-black">
                   {skill}
                 </span>
               ))}
             </div>
           </div>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <div className="animate-fade-in">
             <h3 className="text-xl font-display font-medium mb-6">Experience</h3>
@@ -61,7 +61,7 @@ export function AboutSection({ isHomepage = false }) {
               </div>
             ))}
           </div>
-          
+
           <div className="animate-fade-in">
             <h3 className="text-xl font-display font-medium mb-6">Education</h3>
             {about.education.map((edu, index) => (
