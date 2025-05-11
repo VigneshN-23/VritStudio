@@ -2,11 +2,11 @@ import { siteConfig } from '../../data';
 
 export function Footer() {
   return (
-    <footer className="py-8 border-t border-gray-100">
+    <footer className="py-8 border-t border-dark-surface">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="text-gray-500">
+            <p className="text-dark-muted">
               &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
             </p>
           </div>

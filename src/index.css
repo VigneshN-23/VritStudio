@@ -9,20 +9,20 @@
   }
   
   .btn-primary {
-    @apply bg-black text-white hover:bg-gray-800;
+    @apply bg-accent text-dark-text hover:bg-opacity-80;
   }
   
   .btn-secondary {
-    @apply border border-black hover:bg-gray-100;
+    @apply border border-dark-text text-dark-text hover:bg-dark-surface;
   }
   
   .nav-link {
-    @apply relative uppercase text-sm tracking-wider font-medium;
+    @apply relative uppercase text-sm tracking-wider font-medium text-dark-text;
   }
   
   .nav-link::after {
     content: '';
-    @apply absolute bottom-[-4px] left-0 w-0 h-[1px] bg-black transition-all duration-300;
+    @apply absolute bottom-[-4px] left-0 w-0 h-[1px] bg-dark-text transition-all duration-300;
   }
   
   .nav-link:hover::after,

@@ -11,7 +11,13 @@ export default {
         display: ['Space Grotesk', 'sans-serif']
       },
       colors: {
-        accent: '#ff5555'
+        accent: '#ff5555',
+        dark: {
+          bg: '#121212',
+          surface: '#1E1E1E',
+          text: '#E0E0E0',
+          muted: '#A0A0A0'
+        }
       },
       transitionTimingFunction: {
         'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)'
