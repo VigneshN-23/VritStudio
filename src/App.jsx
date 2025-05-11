@@ -8,11 +8,14 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import { AnimatePresence } from 'framer-motion';
 
+import { ThemeProvider } from './context/ThemeContext';
+
 function App() {
   const location = useLocation();
   
   return (
-    <div className="min-h-screen flex flex-col">
+    <ThemeProvider>
+      <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
         <AnimatePresence mode="wait">
@@ -27,6 +30,7 @@ function App() {
       </main>
       <Footer />
     </div>
+    </ThemeProvider>
   );
 }
 

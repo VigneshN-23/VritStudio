@@ -1,6 +1,33 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { navigation, siteConfig } from '../../data';
+import { useTheme } from '../context/ThemeContext';
+
+function ThemeToggle() {
+  const { isDark, setIsDark } = useTheme();
+
+  return (
+    <button
+      onClick={() => setIsDark(!isDark)}
+      className="w-12 h-6 rounded-full p-1 bg-gray-300 dark:bg-gray-600 relative transition-colors duration-500 ease-in focus:outline-none"
+      aria-label="Toggle theme"
+    >
+      <motion.div
+        className="w-4 h-4 rounded-full bg-white shadow-md"
+        animate={{
+          x: isDark ? 24 : 0,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 500,
+          damping: 30
+        }}
+      />
+    </button>
+  );
+}
+
+import { motion } from 'framer-motion';
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +46,7 @@ export function Navbar() {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
+            <ThemeToggle />
             {navigation.map((item) => (
               <Link 
                 key={item.path}
