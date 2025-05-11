@@ -5,13 +5,13 @@ export const siteConfig = {
   title: "Jane Smith • Graphic Design Portfolio",
   name: "Vrit Studio.",
   role: "Graphic Designer",
-  location: "Mumbai, MH",
-  email: "hello@janesmith.design",
+  location: "India, IN",
+  email: "vritstudio@gmail.com",
   phone: "+91 8668608778",
   social: {
     instagram: "https://instagram.com/janesmith.design",
     behance: "https://behance.net/janesmith",
-    dribbble: "https://dribbble.com/janesmith",
+    twitter: "https://dribbble.com/janesmith",
     linkedin: "https://linkedin.com/in/janesmith"
   }
 };
@@ -52,6 +52,33 @@ export const featuredProjects = [
     category: "Event Branding",
     description: "Full identity and collateral design for an annual music festival, including posters, signage, digital assets, and merch.",
     image: "https://images.unsplash.com/photo-1605723517503-3cadb5818a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80"
+  },
+    {
+    id: "04",
+    title: "Botanica Skincare",
+    category: "Packaging Design",
+    shortDescription: "Packaging system for a natural skincare line",
+    fullDescription: "A minimalist and elegant packaging system for Botanica, a plant-based skincare brand. The design emphasizes the natural ingredients through subtle botanical illustrations and a clean, clinical aesthetic. The system includes primary and secondary packaging, shipping materials, and in-store display units.",
+    image: "https://images.unsplash.com/photo-1570654621852-9dd25b76b38d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2185&q=80",
+    featured: true
+  },
+  {
+    id: "05",
+    title: "Ember Literary Magazine",
+    category: "Editorial Design",
+    shortDescription: "Editorial design for a quarterly literary publication",
+    fullDescription: "A sophisticated editorial design for Ember, a quarterly literary magazine featuring poetry, short fiction, and essays. The design establishes a distinctive grid system, typography hierarchy, and visual language that elevates the written content while providing visual interest. Each issue features custom illustrations and photography art directed to complement the written pieces.",
+    image: "https://images.unsplash.com/photo-1603796846097-bee99e4a601f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2274&q=80",
+    featured: true
+  },
+  {
+    id: "06",
+    title: "Kinetic Running App",
+    category: "Digital Design",
+    shortDescription: "UI/UX design for a fitness tracking application",
+    fullDescription: "A complete user interface design for Kinetic, a running and fitness tracking app. The design includes user flow mapping, wireframing, UI component design, and a comprehensive design system for future expansion. The interface features data visualization of workout metrics, social sharing capabilities, and customizable goal tracking dashboards.",
+    image: "https://images.unsplash.com/photo-1610000679834-e231a2fda7cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80",
+    featured: true
   }
 ];
 
@@ -90,7 +117,7 @@ export const projects = [
     shortDescription: "Packaging system for a natural skincare line",
     fullDescription: "A minimalist and elegant packaging system for Botanica, a plant-based skincare brand. The design emphasizes the natural ingredients through subtle botanical illustrations and a clean, clinical aesthetic. The system includes primary and secondary packaging, shipping materials, and in-store display units.",
     image: "https://images.unsplash.com/photo-1570654621852-9dd25b76b38d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2185&q=80",
-    featured: false
+    featured: true
   },
   {
     id: "05",
@@ -99,7 +126,7 @@ export const projects = [
     shortDescription: "Editorial design for a quarterly literary publication",
     fullDescription: "A sophisticated editorial design for Ember, a quarterly literary magazine featuring poetry, short fiction, and essays. The design establishes a distinctive grid system, typography hierarchy, and visual language that elevates the written content while providing visual interest. Each issue features custom illustrations and photography art directed to complement the written pieces.",
     image: "https://images.unsplash.com/photo-1603796846097-bee99e4a601f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2274&q=80",
-    featured: false
+    featured: true
   },
   {
     id: "06",
@@ -108,7 +135,7 @@ export const projects = [
     shortDescription: "UI/UX design for a fitness tracking application",
     fullDescription: "A complete user interface design for Kinetic, a running and fitness tracking app. The design includes user flow mapping, wireframing, UI component design, and a comprehensive design system for future expansion. The interface features data visualization of workout metrics, social sharing capabilities, and customizable goal tracking dashboards.",
     image: "https://images.unsplash.com/photo-1610000679834-e231a2fda7cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80",
-    featured: false
+    featured: true
   }
 ];
 
@@ -147,7 +174,7 @@ export const about = {
       year: "2012"
     }
   ],
-  skills: ["Brand Strategy", "Logo Design", "Typography", "Editorial Design", "Packaging", "Art Direction", "Digital Design"]
+  skills: ["Brand Strategy", "Logo Design", "Typography", "Editorial Design", "Packaging", "Art Direction", "Digital Design", "Copywriting"]
 };
 
 export const contact = {
