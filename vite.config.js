@@ -12,5 +12,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
+    allowedHosts: ['e582dc9c-c645-4c4f-82a0-ace23bd30363-00-15te08z0g7guo.sisko.replit.dev'],
   },
 });
