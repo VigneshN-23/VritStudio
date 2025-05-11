@@ -31,13 +31,13 @@ export function ProjectsCarousel({ projects }) {
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     // Check on load
     checkIsMobile();
-    
+
     // Check on resize
     window.addEventListener('resize', checkIsMobile);
-    
+
     return () => {
       window.removeEventListener('resize', checkIsMobile);
     };
@@ -54,11 +54,11 @@ export function ProjectsCarousel({ projects }) {
     const newIndex = newDirection === 'next'
       ? (activeIndex === projects.length - 1 ? 0 : activeIndex + 1)
       : (activeIndex === 0 ? projects.length - 1 : activeIndex - 1);
-      
+
     setDirection(newDirection === 'next' ? 1 : -1);
     setActiveIndex(newIndex);
   };
-  
+
   // Determine which animation variant to use
   const getVariants = () => {
     if (direction === 0) return fadeVariants;
@@ -97,7 +97,7 @@ export function ProjectsCarousel({ projects }) {
             </Link>
           </motion.div>
         </motion.div>
-        
+
         <div className="relative">
           {/* Navigation arrows */}
           <motion.button 
@@ -114,7 +114,7 @@ export function ProjectsCarousel({ projects }) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
             </svg>
           </motion.button>
-          
+
           <motion.button 
             className="absolute top-1/2 right-4 z-10 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md hidden md:block"
             onClick={() => navigateCarousel('next')}
@@ -129,7 +129,7 @@ export function ProjectsCarousel({ projects }) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
             </svg>
           </motion.button>
-          
+
           <motion.div 
             className="overflow-hidden rounded-lg"
             initial={{ opacity: 0 }}
@@ -212,7 +212,7 @@ export function ProjectsCarousel({ projects }) {
               </motion.div>
             </AnimatePresence>
           </motion.div>
-          
+
           <motion.div 
             className="flex justify-center mt-8 space-x-3"
             initial={{ opacity: 0, y: 20 }}
@@ -230,7 +230,7 @@ export function ProjectsCarousel({ projects }) {
               />
             ))}
           </motion.div>
-          
+
           {/* Mobile navigation buttons */}
           {isMobile && (
             <motion.div 
@@ -240,7 +240,7 @@ export function ProjectsCarousel({ projects }) {
               transition={{ delay: 0.6, duration: 0.5 }}
             >
               <motion.button 
-                className="bg-gray-100 hover:bg-gray-200 rounded-sm py-2 px-4 text-sm font-medium"
+                className="bg-gray-100 hover:bg-gray-200 rounded-sm py-2 px-4 text-sm font-medium text-black"
                 onClick={() => navigateCarousel('prev')}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -248,7 +248,7 @@ export function ProjectsCarousel({ projects }) {
                 Previous
               </motion.button>
               <motion.button 
-                className="bg-gray-100 hover:bg-gray-200 rounded-sm py-2 px-4 text-sm font-medium"
+                className="bg-gray-100 hover:bg-gray-200 rounded-sm py-2 px-4 text-sm font-medium text-black"
                 onClick={() => navigateCarousel('next')}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
