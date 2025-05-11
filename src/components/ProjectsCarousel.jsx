@@ -66,7 +66,7 @@ export function ProjectsCarousel({ projects }) {
   };
 
   return (
-    <section className={`py-16 md:py-24 ${isDark ? 'bg-dark-bg' : 'bg-gray-50'}`} id="featured-projects">
+    <section className="py-16 md:py-24 bg-dark-bg" id="featured-projects">
       <div className="container mx-auto px-6">
         <motion.div 
           className="flex flex-col md:flex-row justify-between items-baseline mb-12"

@@ -38,7 +38,7 @@ export function Navbar() {
   };
 
   return (
-    <header className={`sticky top-0 z-50 ${isDark ? 'bg-dark-surface/90 border-dark-surface' : 'bg-white/90 border-gray-200'} backdrop-blur-sm border-b`}>
+    <header className="sticky top-0 z-50 bg-dark-surface/90 backdrop-blur-sm border-b border-dark-surface">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <Link to="/" className="text-xl font-display font-medium tracking-tight">
