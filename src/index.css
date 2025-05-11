@@ -13,7 +13,7 @@
   }
   
   .btn-secondary {
-    @apply border border-dark-text text-black hover:bg-dark-surface hover:text-dark-text;
+    @apply border border-dark-text text-dark-text hover:bg-dark-surface;
   }
   
   .nav-link {
