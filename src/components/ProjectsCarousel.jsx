@@ -66,7 +66,7 @@ export function ProjectsCarousel({ projects }) {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50" id="featured-projects">
+    <section className="py-16 md:py-24 bg-dark-bg" id="featured-projects">
       <div className="container mx-auto px-6">
         <motion.div 
           className="flex flex-col md:flex-row justify-between items-baseline mb-12"
@@ -160,7 +160,7 @@ export function ProjectsCarousel({ projects }) {
                   </motion.div>
                   <div className="p-6 md:p-8">
                     <motion.div 
-                      className="text-sm text-gray-500 mb-2"
+                      className="text-sm text-dark-muted mb-2"
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.1 }}
@@ -168,7 +168,7 @@ export function ProjectsCarousel({ projects }) {
                       {projects[activeIndex].category}
                     </motion.div>
                     <motion.h3 
-                      className="text-2xl font-display font-medium mb-3"
+                      className="text-2xl font-display font-medium mb-3 text-dark-text"
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.2 }}
@@ -176,7 +176,7 @@ export function ProjectsCarousel({ projects }) {
                       {projects[activeIndex].title}
                     </motion.h3>
                     <motion.p 
-                      className="text-gray-600 mb-6"
+                      className="text-dark-muted mb-6"
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.3 }}
@@ -222,7 +222,7 @@ export function ProjectsCarousel({ projects }) {
             {projects.map((_, index) => (
               <motion.button 
                 key={index}
-                className={`w-3 h-3 rounded-full ${index === activeIndex ? 'bg-black' : 'bg-gray-300'}`}
+                className={`w-3 h-3 rounded-full ${index === activeIndex ? 'bg-dark-text' : 'bg-dark-surface'}`}
                 onClick={() => handleDotClick(index)}
                 aria-label={`Go to slide ${index + 1}`}
                 whileHover={{ scale: 1.5 }}
